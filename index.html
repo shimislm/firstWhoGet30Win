@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" /> 
+       <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <script src="dice.js"></script>
+</head>
+
+<body>
+    <main class="container-fluid d-flex align-items-center" style="background-image: url(Playing-dice-blue-3D-cube-with-numbers-board-casino-game-on-transparent-background-PNG.png) ; background-position: center; background-size: cover;">
+        <div class="container p-3">
+            <h1>First who get 30 coins wins!!</h1>
+            <div>
+                <div class="row justify-content-between">
+                    <div class="col-md-5 text-center">
+                        <div class="text-center">
+                            <h5 class="col-12">Harley
+                                <img src="dice_images/Harley_quinn.png" alt="" width="60px">
+                            </h5>
+                        </div>
+                        
+                        <img src="dice_images/dice1.jpg" id="id_img1" width="200px" height="200px">
+                        <p id="id_status_player1">Lets Roll</p>
+                        <h4>Coins <span id="id_player1Coins"></span></h4>
+                    </div>
+                    <div class="col-md-5 text-center">
+                        <div class="text-center">
+                            <h5 class="col-12">Joker
+                                <img src="dice_images/Joker.png" alt="" width="60px">
+                            </h5>
+                        </div>
+                        <img src="dice_images/dice1.jpg" id="id_img2" width="200px" height="200px">
+                        <p id="id_status_player2">Lets Roll</p>
+                        <h4>Coins <span id="id_player2Coins"></span></h4>
+                    </div>
+                </div>
+                <div class="row justify-content-around">
+                    <div class="col-4">
+                        <button onclick="diceRoll()" class="btn btn-primary btn-lg">Roll</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
